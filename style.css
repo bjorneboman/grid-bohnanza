@@ -1,8 +1,32 @@
 body {
-    background-color: slateblue;
+    background-color: rgb(53, 58, 156);
+    font-family: "Montserrat", sans-serif;
+    color: white;
 }
-
+main {
+    /* border: 1px solid black;*/
+}
+h1, h2 {
+    text-align: center;
+    color: white;
+    margin-block: 0.5rem;
+    border-bottom: 3px solid black;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+p {
+    font-weight: 500;
+}
+section {
+    margin-block: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
 .dice {
+    box-shadow: 0 0 20px rgba(186, 186, 186, 0.8);
+    border: 2px solid black;
+    border-radius: 1em;
     width: 500px;
     height: 500px;
     display: grid;
@@ -42,5 +66,38 @@ body {
 }
 
 .container {
+    border: 12px solid white;
+    width: fit-content;
+    height: fit-content;
     display: grid;
-    grid-template-rows: ;}
+    grid-template-rows: 210px 65px 70px 10px;
+    grid-template-columns: 175px 90px 65px 25px;
+    background: #000;
+    gap: 9px;
+}
+.item {
+    background: #f0f1ec;
+}
+.red {
+    background: red;
+}
+.white1 {
+    grid-column: span 3;
+}
+.white2 {
+    grid-column: span 2;
+}
+.white3 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.blue {
+    background: blue;
+    border-bottom: 10px solid black;
+}
+.yellow {
+    background: yellow;
+}
+.black {
+    background: black;
+}

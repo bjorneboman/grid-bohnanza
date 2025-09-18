@@ -18,7 +18,7 @@ p {
 }
 nav {
     background-color: rgba(69, 143, 255, 0.629);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); */
     padding: .1rem;
     margin: 0;
 }
@@ -32,6 +32,7 @@ a {
     text-decoration: none;
     color: white;
     font-weight: 600;
+    transition: all 0.3s ease;
 }
 a:hover {
     color: palevioletred;

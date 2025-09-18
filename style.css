@@ -16,6 +16,27 @@ h1, h2 {
 p {
     font-weight: 500;
 }
+nav {
+    background-color: rgba(69, 143, 255, 0.629);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    padding: .1rem;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+a:hover {
+    color: palevioletred;
+    text-shadow: 0 0 5px hsl(0, 0%, 100%);
+}
 section {
     margin-block: 2rem;
     display: grid;
@@ -100,4 +121,35 @@ section {
 }
 .black {
     background: black;
+}
+
+.container2 {
+	perspective: 400px;
+	transform-style: preserve-3d;
+	opacity: 70%;
+}
+#grid-floor {
+    --grid-wire-color: white;
+	margin: 10px auto;
+	display: grid;
+	grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+	background-color: var(--grid-wire-color);
+	border: 1px solid var(--grid-wire-color);
+	gap: 2px;
+	width: 50vh;
+	height: 50vh;
+	transform: rotatex(70deg);
+	animation: grid-spinn 2.5s linear 0s infinite normal none running;
+}
+.cell {
+	background-color: rgb(242, 2, 255);
+	opacity: 50%;
+}
+@keyframes grid-spinn {
+	0% {
+		transform: rotatex(70deg) rotatez(0deg);
+	}
+	100% {
+		transform: rotatex(70deg) rotatez(90deg);
+	}
 }
